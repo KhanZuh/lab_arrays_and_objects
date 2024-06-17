@@ -40,12 +40,11 @@ stationCount = 8;
  */
 
 thirdStation = stations[2];
-// thirdStation = Newcastle
 
-// console.log("The third station is " + thirdStation);
+console.log("The third station is " + thirdStation);
 
 // third station -->  accessed at index 2 in the stations array (array indices start from 0).
-// value at 3 in the array list is therefore at index [2].
+// value/element at 3 in the array list is therefore at index [2].
 
 
 
