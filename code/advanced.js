@@ -32,7 +32,18 @@ unitedKingdom = [
  * Q1. Add some tourist attractions to England
  */
 
-england = null;
+// find england then add to england
+// find method (arrow functions used as callbacks to imprive readability)
+
+// find
+england = unitedKingdom.find(country => country.name === "England");
+
+// add
+england.touristAttractions = ["Buckingham Palace", "Stonehenge", "Tower of London"];
+
+
+
+// england = null;
 
 // console.log(england);
 
@@ -40,7 +51,17 @@ england = null;
  * Q2. Change the capital of Wales to "Cardiff"
  */
 
-wales = null;
+// find --> then update
+
+//find
+wales = unitedKingdom.find(country => country.name === "Wales");
+
+
+//update 
+wales.capital = "Cardiff";
+
+
+// wales = null;
 
 // console.log(wales);
 
@@ -48,10 +69,36 @@ wales = null;
  * Q3. Find a method in the documentation which will give you all of the available keys for Northern Ireland
  */
 
-northernIrelandKeys = null;
+// northernIrelandKeys = null;
+
+//find 
+northernIreland = unitedKingdom.find(country => country.name === "Northern Ireland");
+
+// gettting all keys (object.keys accroding to w3schoools/ MDN web docs)
+northernIrelandKeys = Object.keys(northernIreland);
+
 
 // console.log(northernIrelandKeys);
 
 /**
  * Q4. Use an if statement to compare the population of Scotland to the population of Wales, and say which is bigger.
  */
+
+
+// find wales
+wales = unitedKingdom.find(country => country.name === "Wales");
+
+
+// find scotland
+scotland = unitedKingdom.find(country => country.name === "Scotland");
+
+
+// code block containing if statement
+if (scotland.population > wales.population) {
+  console.log("Scotland has a larger population than Wales.");
+} else if (scotland.population < wales.population) {
+  console.log("Wales has a larger population than Scotland.");
+} else {
+  console.log("Scotland and Wales have the same population.");
+}
+
