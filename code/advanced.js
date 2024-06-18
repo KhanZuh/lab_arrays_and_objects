@@ -41,9 +41,11 @@ england = unitedKingdom.find(country => country.name === "England");
 // add
 england.touristAttractions = ["Buckingham Palace", "Stonehenge", "Tower of London"];
 
+//Model solution
+// england = unitedKingdom[1];
+// england.touristAttractions = ["Buckingham Palace", "Big Ben"];
+// console.log(england);
 
-
-// england = null;
 
 // console.log(england);
 
@@ -60,9 +62,9 @@ wales = unitedKingdom.find(country => country.name === "Wales");
 //update 
 wales.capital = "Cardiff";
 
-
-// wales = null;
-
+// Model solution
+// wales = unitedKingdom[2];
+// wales.capital = "Cardiff";
 // console.log(wales);
 
 /**
@@ -77,8 +79,12 @@ northernIreland = unitedKingdom.find(country => country.name === "Northern Irela
 // gettting all keys (object.keys accroding to w3schoools/ MDN web docs)
 northernIrelandKeys = Object.keys(northernIreland);
 
+// Model solution
+// northernIreland = unitedKingdom[3];
+// northernIrelandKeys = Object.keys(northernIreland);
 
 // console.log(northernIrelandKeys);
+
 
 /**
  * Q4. Use an if statement to compare the population of Scotland to the population of Wales, and say which is bigger.
@@ -101,4 +107,16 @@ if (scotland.population > wales.population) {
 } else {
   console.log("Scotland and Wales have the same population.");
 }
+
+
+// Model solution
+
+// scotland = unitedKingdom[0];
+// wales = unitedKingdom[2];
+
+// if (scotland.population < wales.population){
+//   console.log("Scotland has a lower population than Wales");
+// } else if (scotland.population > wales.population){
+//   console.log("Scotland has a higher population than Wales");
+// } 
 

@@ -41,12 +41,13 @@ catBreed = cat.breed;
  * Q3. It's the tortoise's birthday! Add one to her current age.
  */
 // easy method - use post-increment operator.
-// tortoise.age++;
+tortoise.age++;
 // console.log(tortoise)
 
 // OR 
 // tortoise.age = tortoise.age + 1;
 // console.log(tortoise.age); 
+// console.log(tortoise); 
 
 /**
  * Q4. How many different colours is Poppy?
@@ -81,7 +82,7 @@ tortoise.favouriteFood = "dandelion";
 totalPetAge = 32;
 totalPetAge = dog.age + cat.age + tortoise.age + parrot.age;
 
-// console.log("The total age of the pets is " + totalPetAge);
+console.log("The total age of the pets is " + totalPetAge);
 
 /**
  * Q8. It's turns out that Morris isn't a European Shorthair. We don't actually know his real breed, so remove that key from his object
